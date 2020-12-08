@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:replace = "templates.html :: title"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type = "text/css" th:href="@{/resources/css/main.css}"/>
+</head>
+<body>
+    <div class = "content-wrapper-static">
+    	<nav th:replace = "templates.html :: navbar"></nav>
+    	<div id = "canvas-wrapper">
+    		<canvas id = "draw-field" width="700px" height = "700px"></canvas>
+    	</div>
+    </div>
+    <footer th:replace = "templates.html :: footer"></footer>
+    <script th:each = "file: ${scripts}" type="text/javascript" th:src = "@{{file}(file = ${file})}"></script>
+    <script type="text/javascript" th:src = "@{/resources/js/basic.js}"></script>
+</body>
+</html>
+<!-- Made by EugeneVV -->

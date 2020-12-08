@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:replace = "templates.html :: title"></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type = "text/css" th:href="@{/resources/css/main.css}"/>
+</head>
+<body>
+    <div class = "content-wrapper">
+    	<nav th:replace = "templates.html :: navbar"></nav>
+    	<div class = "content">
+    		<div class = "description">
+		   		<p>
+		   			This web site is Lab 3 of web-technologies (7, 12 stages). <br/>
+					Made by Evgeny Vasyliev TTP-3
+		   		</p>
+		   	</div>
+    	</div>
+    </div>
+    <footer th:replace = "templates.html :: footer"></footer>
+</body>
+</html>
+<!-- Made by EugeneVV -->

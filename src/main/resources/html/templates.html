@@ -1,0 +1,16 @@
+<title th:fragment = "title">S5_WEBT_Lab1</title>
+
+<nav th:fragment = "navbar">
+	<span class = "logo">
+		Lab 3
+	</span>
+	<ul class = "nav-list">
+		<li th:each = "listItem: ${navList}">
+			<a class = "nav-item" th:href = "@{/{path}(path = ${listItem.getUrl()})}">[[${listItem.getName()}]]</a>
+		</li>
+	</ul>
+</nav>
+
+<footer th:fragment = "footer"> Semester 5. Web-technologies. Lab 3. Made by EueneVV </footer>
+
+<!-- Made by EugeneVV -->
